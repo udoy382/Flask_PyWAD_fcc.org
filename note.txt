@@ -1,0 +1,15 @@
+Flask Course - Python Web Application Development => freeCodecamp.org ( YouTube )
+
+
+1. install SQLAlchemy with pip* [ for work with database ]
+
+2. Add item in db [ database ] in terminal
+
+>>> Python
+>>> from market import db [ market is our file name like market.py ] 
+>>> item1 = Item(name='Iphone 10', price=500, barcode='998899', description='desc')
+>>> db.session.add(item1)   
+>>> db.session.commit()
+>>> Item.query.all()
+[<Item 1>]
+>>>

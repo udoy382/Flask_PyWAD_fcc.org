@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %} Register {% endblock title %}
+
+{% block body %}
+
+<h1 style="text-align: center;">Register Form</h1>
+
+<div class="container">
+    <form action="#" method="POST" class="form-register" style="color: #fff;">
+        {{ form.hidden_tag() }}
+
+        {{ form.username.lable }}
+        {{ form.username(placeholder='username')}} <br>
+
+        {{ form.email_address.lable }}
+        {{ form.email_address(placeholder='email')}} <br>
+
+        {{ form.password1.lable }}
+        {{ form.password1(placeholder='password1')}} <br>
+
+        {{ form.password2.lable }}
+        {{ form.password2(placeholder='password2')}} <br>
+
+        {{ form.submit.lable }}
+        {{ form.submit(placeholder='submit')}} <br>
+        
+    </form>
+</div>
+
+{% endblock body %}
